@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/style.css" tpye="text/css">
+		<script tpye="text/javascript">
+			(function(){
+				var PixelRatio = 1/window.devicePixelRatio;
+				document.write('<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale='+PixelRatio+',maximum-scale='+PixelRatio+',initial-scale='+PixelRatio+'"/>');
+				var html = document.documentElement;
+				var hWidth = html.getBoundingClientRect().width;
+				html.style.fontSize = hWidth/15 + "px";
+			})()
+		</script>
+	
+	</head>
+	<body>
+		<header>
+			<div class="header1"><img src="../images/page1_map7.png" class="headerimg1"/></div>
+			<div class="header2"><img src="../images/page1_map8.png" class="headerimg2"/></div>
+		</header>
+		<div class="page">
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="产品.html" class="active">随享汇</a></li>
+				<li><a href="定制旅行.html">定制旅行</a></li>
+			</ul>
+		</div>
+		<div class="con">
+				<div class="con1">
+					<a href="../html/惠享旅程.html" class="con_bj"><img src="../images/product/product_1.png"/></a>
+					<p class='p_header'><a href="../html/惠享旅程.html">惠享旅程套餐</a></p>
+					<p class='p_txt'><a href="../html/惠享旅程.html">———&nbsp;&nbsp;7599元/人&nbsp;&nbsp;———</a></p>
+					<p class='p_div' id='p_div1'><a href="../html/惠享旅程.html">5条路线任选3条</a></p>
+				</div>
+		</div>
+		<div class="con">
+				<div class="con1">
+					<a href="../html/众享旅程.html" class="con_bj"><img src="../images/product/product_2.png"/></a>
+					<p class='p_header'><a href="../html/众享旅程.html">众享旅程套餐</a></p>
+					<p class='p_txt'><a href="../html/众享旅程.html">———&nbsp;&nbsp;13888元/人&nbsp;&nbsp;———</a></p>
+					<p class='p_div' id='p_div2'><a href="../html/众享旅程.html">长线&nbsp;/&nbsp;短线&nbsp;/&nbsp;邮轮&nbsp;&nbsp;每条线路任选其一</a></p>
+				</div>
+		</div>
+		<div class="con">
+				<div class="con1">
+					<a href="../html/尊享旅程.html" class="con_bj"><img src="../images/product/product_3.png"/></a>
+					<p class='p_header'><a href="../html/尊享旅程.html">尊享旅程套餐</a></p>
+					<p class='p_txt'><a href="../html/尊享旅程.html">———&nbsp;&nbsp;19888元/人&nbsp;&nbsp;———</a></p>
+					<p class='p_div' id='p_div3'><a href="../html/尊享旅程.html">长线&nbsp;/&nbsp;短线&nbsp;/&nbsp;邮轮&nbsp;&nbsp;每条线路任选其一</a></p>
+				</div>
+		</div>
+		<div class="con">
+				<div class="con1">
+					<a href="../html/智享旅程.html" class="con_bj"><img src="../images/product/product_4.png"/></a>
+					<p class='p_header'><a href="../html/智享旅程.html">惠享旅程套餐</a></p>
+					<p class='p_txt'><a href="../html/智享旅程.html">—&nbsp;&nbsp;99888元/人、39888元/人（a项不选）&nbsp;&nbsp;—</a></p>
+					<p class='p_div' id='p_div4'><a href="../html/智享旅程.html">高端线路自由搭配</a></p>
+				</div>
+		</div>
+		<script type="text/javascript">
+			var header2 = document.getElementsByClassName('header2')[0];
+			var page = document.getElementsByClassName('page')[0];
+			var onf = true;
+			header2.onclick = function(){
+				if(onf){
+					page.style.display = 'block';
+					onf = false;
+				}
+				else{
+					page.style.display = 'none';
+					onf = true;
+				}
+			}
+		</script>
+	</body>
+</html>

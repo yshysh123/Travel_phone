@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<title>Document</title>
+		<script tpye="text/javascript">
+			(function(){
+				var PixelRatio = 1/window.devicePixelRatio;
+				document.write('<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale='+PixelRatio+',maximum-scale='+PixelRatio+',initial-scale='+PixelRatio+'"/>');
+				var html = document.documentElement;
+				var hWidth = html.getBoundingClientRect().width;
+				html.style.fontSize = hWidth/15 + "px";
+			})()
+		</script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="header1"><img src="../images/page1_map7.png" class="headerimg1"/></div>
+			<div class="header2"><img src="../images/page1_map8.png" class="headerimg2"/></div>
+		</header>
+		<div class="page">
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="产品.html">随享汇</a></li>
+				<li><a href="定制旅行.html">定制旅行</a></li>
+			</ul>
+		</div>
+		<div class="jianbian2"></div>
+		<div class="trv_con_title clearfix" id="zhongxiang1">
+			<span class="trv_con_title1">众享旅程</span>
+			<span class="trv_con_title2">产品线路</span>
+			<span class="trv_con_title3">预计出发时间</span>
+		</div>
+		<div class="trv_con_2 clearfix zhongxiang_title">
+			<div class="trv_con_2_b zhongxiang">
+				<ul>
+					<li>A</li>
+					<li>5选1</li>
+				</ul>
+			</div>
+			<div class="trv_con_2_b_nr clearfix">
+				<div>
+					<div class="guojia1">西欧</div>
+					<div class="month1">11-3月</div>
+				</div>
+				<div>
+					<div class="guojia1">南非</div>
+					<div class="month1">3-6月</div>
+				</div>
+				<div>
+					<div class="guojia1">俄罗斯</div>
+					<div class="month1">11-3月</div>
+				</div>
+				<div>
+					<div class="guojia1">土耳其</div>
+					<div class="month1">3-6月</div>
+				</div>
+				<div>
+					<div class="guojia1 nobor">埃及</div>
+					<div class="month1 nobor">3-6月</div>
+				</div>
+			</div>
+		</div>
+		<div class="trv_con_2 clearfix zhongxiang_title">
+			<div class="trv_con_2_b zhongxiang">
+				<ul>
+					<li>B</li>
+					<li>5选1</li>
+				</ul>
+			</div>
+			<div class="trv_con_2_b_nr clearfix">
+				<div>
+					<div class="guojia1">泰国</div>
+					<div class="month1">4-6月</div>
+				</div>
+				<div>
+					<div class="guojia1">新加坡、马来</div>
+					<div class="month1">3-6月</div>
+				</div>
+				<div>
+					<div class="guojia1">柬埔寨</div>
+					<div class="month1">4-6月</div>
+				</div>
+				<div>
+					<div class="guojia1">日本</div>
+					<div class="month1">9-12月</div>
+				</div>
+				<div>
+					<div class="guojia1 nobor">越南岘港</div>
+					<div class="month1 nobor">4-6月</div>
+				</div>
+			</div>
+		</div>
+		<div class="trv_con_5 clearfix">
+			<div class="trv_con_5_e zhongxiang_title2">
+				<ul>
+					<li>C</li>
+					<li>2选1</li>
+				</ul>
+			</div>
+			<div class="trv_con_5_b_nr zhongxiang_body2 clearfix">
+				<div>
+					<div class="guojia1">歌诗达邮轮</div>
+					<div class="month1">11-6月</div>
+				</div>
+				<div>
+					<div class="guojia1 nobor">抒情号邮轮</div>
+					<div class="month1 nobor">11-6月</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var header2 = document.getElementsByClassName('header2')[0];
+			var page = document.getElementsByClassName('page')[0];
+			var onf = true;
+			header2.onclick = function(){
+				if(onf){
+					page.style.display = 'block';
+					onf = false;
+				}
+				else{
+					page.style.display = 'none';
+					onf = true;
+				}
+			}
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<title>Document</title>
+		<script tpye="text/javascript">
+			(function(){
+				var PixelRatio = 1/window.devicePixelRatio;
+				document.write('<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale='+PixelRatio+',maximum-scale='+PixelRatio+',initial-scale='+PixelRatio+'"/>');
+				var html = document.documentElement;
+				var hWidth = html.getBoundingClientRect().width;
+				html.style.fontSize = hWidth/15 + "px";
+			})()
+		</script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="header1"><img src="../images/page1_map7.png" class="headerimg1"/></div>
+			<div class="header2"><img src="../images/page1_map8.png" class="headerimg2"/></div>
+		</header>
+		<div class="page">
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="产品.html">随享汇</a></li>
+				<li><a href="定制旅行.html">定制旅行</a></li>
+			</ul>
+		</div>
+		<div class="jianbian2"></div>
+		<div class="trv_con_title clearfix">
+			<span class="trv_con_title1">智享旅程</span>
+			<span class="trv_con_title2">产品线路</span>
+			<span class="trv_con_title3">预计出发时间</span>
+		</div>
+		<div class="trv_con_1 clearfix">
+			<div class="trv_con_1_a">A</div>
+			<div class="trv_con_1_a_nr">
+				<div>
+					<div class="guojia2 nobor">南美四国</div>
+					<div class="month2 nobor">全年(视团期)</div>
+				</div>
+			</div>
+		</div>
+		<div class="trv_con_2 clearfix">
+			<div class="trv_con_2_b">
+				<ul>
+					<li>B</li>
+					<li>三选一</li>
+				</ul>
+			</div>
+			<div class="trv_con_2_b_nr clearfix">
+				<div>
+					<div class="guojia1">北欧+俄罗斯</div>
+					<div class="month1">11-3月</div>
+				</div>
+				<div>
+					<div class="guojia1">*美国+夏威夷</div>
+					<div class="month1">11-4月</div>
+				</div>
+				<div>
+					<div class="guojia1 nobor">突尼斯+摩洛哥</div>
+					<div class="month1 nobor">3-9月</div>
+				</div>
+			</div>
+		</div>
+		<div class="trv_con_3 clearfix">
+			<div class="trv_con_2_b">C<br />三选一</div>
+			<div class="trv_con_2_b_nr clearfix">
+				<div>
+					<div class="guojia1">毛里求斯</div>
+					<div class="month1">3-9月</div>
+				</div>
+				<div>
+					<div class="guojia1">马尔代夫</div>
+					<div class="month1">3-9月</div>
+				</div>
+				<div>
+					<div class="guojia1 nobor">塞舌尔</div>
+					<div class="month1 nobor">3-9月</div>
+				</div>
+			</div>
+		</div>
+		<div class="trv_con_4 clearfix">
+			<div class="trv_con_2_b">D<br />三选一</div>
+			<div class="trv_con_2_b_nr clearfix">
+				<div>
+					<div class="guojia1">尼泊尔</div>
+					<div class="month1">3-9月</div>
+				</div>
+				<div>
+					<div class="guojia1">斯里兰卡</div>
+					<div class="month1">3-9月</div>
+				</div>
+				<div>
+					<div class="guojia1 nobor">印度</div>
+					<div class="month1 nobor">3-9月</div>
+				</div>
+			</div>
+		</div>
+		<div class="trv_con_5 clearfix">
+			<div class="trv_con_5_e">
+				<ul>
+					<li>E</li>
+					<li>二选一</li>
+				</ul>
+			</div>
+			<div class="trv_con_5_b_nr clearfix">
+				<div>
+					<div class="guojia1">日本+北海道</div>
+					<div class="month1">9-12月</div>
+				</div>
+				<div>
+					<div class="guojia1 nobor">东欧五国</div>
+					<div class="month1 nobor">11-3月</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var header2 = document.getElementsByClassName('header2')[0];
+			var page = document.getElementsByClassName('page')[0];
+			var onf = true;
+			header2.onclick = function(){
+				if(onf){
+					page.style.display = 'block';
+					onf = false;
+				}
+				else{
+					page.style.display = 'none';
+					onf = true;
+				}
+			}
+		</script>
+	</body>
+</html>

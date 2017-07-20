@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css" tpye="text/css">
+		<script tpye="text/javascript">
+			(function(){
+				var PixelRatio = 1/window.devicePixelRatio;
+				document.write('<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale='+PixelRatio+',maximum-scale='+PixelRatio+',initial-scale='+PixelRatio+'"/>');
+				var html = document.documentElement;
+				var hWidth = html.getBoundingClientRect().width;
+				html.style.fontSize = hWidth/15 + "px";
+			})()
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="header1"><img src="images/page1_map7.png" class="headerimg1"/></div>
+			<div class="header2"><img src="images/page1_map8.png" class="headerimg2"/></div>
+		</header>
+		<div class="page">
+			<ul>
+				<li><a href="#" class="active">首页</a></li>
+				<li><a href="html/产品.html">随享汇</a></li>
+				<li><a href="html/定制旅行.html">定制旅行</a></li>
+			</ul>
+		</div>
+		<!--随游派-->
+		<div class="content">
+			<div class="content_word1">随游派</div>
+			<div class="content_word2">智慧服务，简单旅行</div>
+			<div class="content_word3">帮你把世界握在手中</div>
+			<div class="content_word4"><a href="javascript:;">下载app</a></div>
+			<div class="content_img">
+				<a href="html/定制旅行.html"><img src="images/page1_map6.png"/></a>
+			</div>
+		</div>
+		<div class="jianbian"></div>
+		<!--随享汇-->
+		<div class="content1">
+			<div class="content1_title">随“享”荟</div>
+			<div class="content1_text">一&nbsp;&nbsp;圆你走遍世界的梦&nbsp;&nbsp;一</div>
+			<div class="content1_img">
+				<div class="content1_img_top clearfix">
+					<a href="html/惠享旅程.html"><img src="images/page1_map1.png" class="content1_img1_top"/></a>
+					<a href="html/众享旅程.html"><img src="images/page1_map2.png" class="content1_img2_top"/></a>
+				</div>
+				<div class="content1_img_btm clearfix">
+					<a href="html/尊享旅程.html"><img src="images/page1_map3.png" class="content1_img1_btm"/></a>
+					<a href="html/智享旅程.html"><img src="images/page1_map4.png" class="content1_img2_btm"/></a>
+				</div>
+			</div>
+			<div class="content1_more">
+				<div class="more"><a href="html/产品.html">更多详情>></a></div>
+			</div>
+		</div>
+		<!--定制旅行-->
+		<div class="content2">
+			<div class="content2_title">定制旅行</div>
+			<div class="content2_text">一&nbsp;&nbsp;让旅行更high，更精彩&nbsp;&nbsp;一</div>
+			<div class="content2_form">
+				<form>
+					<input type="text" placeholder="姓名" class="input1"/>
+					<input type="text" placeholder="海外目的地" class="input2"/>
+					<input type="text" placeholder="出发时间" class="input3"/>
+					<input type="text" placeholder="手机/微信" class="input4"/>
+					<input type="submit" placeholder="提交" class="btn1"/>
+				</form>
+			</div>
+			<div class="content2_img"><img src="images/page1_map5.png"/></div>
+		</div>
+		<script type="text/javascript">
+			var header2 = document.getElementsByClassName('header2')[0];
+			var page = document.getElementsByClassName('page')[0];
+			var onf = true;
+			header2.onclick = function(){
+				if(onf){
+					page.style.display = 'block';
+					onf = false;
+				}
+				else{
+					page.style.display = 'none';
+					onf = true;
+				}
+			}
+		</script>
+	</body>
+</html>

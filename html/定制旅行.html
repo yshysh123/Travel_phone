@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/style.css" tpye="text/css">
+		<script tpye="text/javascript">
+			(function(){
+				var PixelRatio = 1/window.devicePixelRatio;
+				document.write('<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale='+PixelRatio+',maximum-scale='+PixelRatio+',initial-scale='+PixelRatio+'"/>');
+				var html = document.documentElement;
+				var hWidth = html.getBoundingClientRect().width;
+				html.style.fontSize = hWidth/15 + "px";
+			})()
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="header1"><img src="../images/page1_map7.png" class="headerimg1"/></div>
+			<div class="header2"><img src="../images/page1_map8.png" class="headerimg2"/></div>
+		</header>
+		<div class="page">
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="产品.html">随享汇</a></li>
+				<li><a href="定制旅行.html" class="active">定制旅行</a></li>
+			</ul>
+		</div>
+		<!--更精彩-->
+		<div id="high">
+			<a href="javascript:;" class="highClick">
+				<img src="../images/show.jpg" class="highImg" />
+				<h3 class="highH3">——&nbsp;让旅行更high,更精彩&nbsp;——</h3>
+				<h4 class="highH4">私人订制游多简单？</h4>
+				<h5 class="highH5">你只需说出你的梦想</h5>
+				<span class="highSpan1">一对一贴心的旅行顾问，及时提供</span>
+				<span class="highSpan2">最专业的旅行推荐与指导。对当</span>
+				<span class="highSpan3">地情况了如指掌的定制师，专</span>
+				<span class="highSpan4">属为你制定行程。说出你的</span>
+				<span class="highSpan5">梦想吧，我们来为你筑梦。</span>
+			</a>
+		</div>
+		<!--梦想-->
+		<a href="javascript:;" class="dream">
+			<div class="dream1">
+				<span class="dreamSpan1">Custom travel</span>
+				<span class="dreamSpan2">梦想里的旅行</span>
+				<span class="dreamSpan3">一切都是你想要的</span>
+				<span class="dreamSpan4">————</span>
+			</div>
+			<div class="dream2">
+				<div class="dreamOpacity"></div>
+				<span class="dreamSpan5">爱冒险的去跳伞，爱吃喝的去收集米其林星星，爱拍照的 去最美的地方。</span>
+				<span class="dreamSpan6">定制旅行 - 一切都是你想要的才对。</span>
+			</div>
+		</a>
+		<!--旅行流程-->
+		<div id="travel">
+			<div class="travel_title">——&nbsp;定制旅行流程&nbsp;——</div>
+			<div class="travel_cen">
+				<span class="travel_span1">留下你的联系方式</span>
+				<span class="travel_span2">说出你的旅行梦想</span>
+				<span class="travel_span3">梦想的行程出现</span>
+				<span class="travel_span4">向着梦想出发</span>
+			</div>
+			<div class="content2_form">
+				<form>
+					<input type="text" placeholder="姓名" class="input1"/>
+					<input type="text" placeholder="海外目的地" class="input2"/>
+					<input type="text" placeholder="出发时间" class="input3"/>
+					<input type="text" placeholder="手机/微信" class="input4"/>
+					<input type="submit" placeholder="提交" class="btn1"/>
+				</form>
+			</div>
+			<div class="content2_img"><img src="../images/page1_map5.png"/></div>
+		</div>
+		<script type="text/javascript">
+			var header2 = document.getElementsByClassName('header2')[0];
+			var page = document.getElementsByClassName('page')[0];
+			var onf = true;
+			header2.onclick = function(){
+				if(onf){
+					page.style.display = 'block';
+					onf = false;
+				}
+				else{
+					page.style.display = 'none';
+					onf = true;
+				}
+			}
+		</script>
+	</body>
+</html>
